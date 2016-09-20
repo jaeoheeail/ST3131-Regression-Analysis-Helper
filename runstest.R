@@ -71,7 +71,10 @@ runstest <- function(model,alt){
   else {cat("Reject Null Hypothesis. Too many or two few runs.")}
 }
 
-### e.g. ###
-# runstest(model1,"greater") #H1: too many runs (one-sided test)
-# runstest(model1,"less") #H1: too few runs (one-sided test)
-# runstest(model1,"two.sided") #H1: too few or too many runs (two-sided)
+## Sample run
+y <- c(95,71,83,91,102,87,93,100,104,94,113,96,83,84,102,100,105,57,121,86,100)
+x <- c(15,26,10,9,15,20,18,11,8,20,7,9,10,11,11,10,12,42,17,11,10)
+model1 <- lm(y~x)
+runstest(model1,"greater") #H1: too many runs (one-sided test)
+runstest(model1,"less") #H1: too few runs (one-sided test)
+runstest(model1,"two.sided") #H1: too few or too many runs (two-sided)
