@@ -1,5 +1,4 @@
 # ST3131-Regression-Analysis-Helper
-> Help files for students taking ST3131    
 > Perform all-in-one outlier tests and runs test
 
 ## outlierchecker.R
