@@ -35,6 +35,7 @@ outlierchecker(model1)
 ```   
 ## runstest.R
 ```
+# Sample Run   
 runstest(model1,"greater") #H1: too many runs (one-sided test)
 +  ---  +  -  +++++  ---  +++  -  +  -  +
  Number of Runs: 11
